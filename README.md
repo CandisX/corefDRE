@@ -85,21 +85,11 @@ Following the hint in this [link](http://viewsetting.xyz/2019/10/17/pytorch_tran
 
 ```bash
 >> cd code
->> ./evalXXX.sh gpu_id threshold(optional)  # like ./eval_GAIN_BERT.sh 0 0.5521
+>> ./evalXXX.sh gpu_id threshold(optional)  # like ./run_CorefDRE_BERT.sh 0 0.5521
 >> tail -f -n 2000 logs/test_xxx.log
 ```
 
 PS: we recommend to use threshold = -1 (which is the default, you can omit this arguments at this time) for dev set, 
 the log will print the optimal threshold in dev set, and you can use this optimal value as threshold to evaluate test set.
 
-## 6. Submission to LeadBoard (CodaLab)
-- You will get json output file for test set at step 5. 
-
-- And then you can rename it as `result.json` and compress it as `result.zip`. 
-
-- At last,  you can submit the `result.zip` to [CodaLab](https://competitions.codalab.org/competitions/20717#participate-submit_results).
-
-## 7. License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
